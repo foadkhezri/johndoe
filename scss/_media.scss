@@ -1,0 +1,253 @@
+@media (max-width: 1200px) {
+    #works {
+        .my-work-container {
+            grid-auto-rows: 250px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #technologies {
+        .technologies-container {
+            flex-wrap: wrap;
+        }
+    }
+
+    #works {
+        .my-work-container {
+            grid-auto-rows: 220px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        height: 30rem;
+    }
+
+    #specializes {
+        .skills-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    #achievements {
+        .achievements-container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+        }
+    }
+
+    #process {
+        .process-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    #testimonials {
+        .testimonial-container {
+            grid-template-areas:
+                "testimonial1  testimonial1 testimonial2 testimonial2"
+                "caption1 caption1 caption2 caption2"
+                "testimonial3 testimonial3 testimonial4 testimonial4"
+                "caption3 caption3 caption4 caption4";
+            grid-gap: 1rem;
+        }
+    }
+
+    #works {
+        .my-work-container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 250px;
+        }
+    }
+
+    #next-project {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+
+
+
+    #home,
+    #about,
+    #work,
+    #contact {
+
+        nav {
+            z-index: 2;
+
+            .menu-navbar {
+                visibility: hidden;
+                flex-direction: column;
+                position: fixed;
+                align-items: center;
+                justify-content: space-around;
+                width: 50vw;
+                height: 30rem;
+                right: 0;
+                top: 0;
+                background-color: $dark-color;
+
+                .close-button {
+                    display: block;
+
+                    .close {
+                        color: $light-color;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+
+            .menu-container {
+                display: block;
+            }
+        }
+    }
+
+    #home {
+        .showcase-container {
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    #specializes {
+        .skills-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #achievements {
+        .achievements-container {
+            grid-template-columns: 1fr;
+            grid-gap: 1rem;
+        }
+    }
+
+    #process {
+        .process-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    // about page 
+    #about-me {
+        .about-me-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #awards {
+        grid-template-columns: 1fr;
+    }
+
+    #technologies {
+        .technologies-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: stretch;
+
+            img {
+                margin: 2rem;
+            }
+        }
+    }
+
+    #testimonials {
+        .testimonial-container {
+            grid-template-areas:
+                "testimonial1  testimonial1 testimonial1 testimonial1"
+                "caption1 caption1 caption1 caption1"
+                "testimonial2  testimonial2 testimonial2 testimonial2"
+                "caption2 caption2 caption2 caption2"
+                "testimonial3  testimonial3 testimonial3 testimonial3"
+                "caption3 caption3 caption3 caption3"
+                "testimonial4  testimonial4 testimonial4 testimonial4"
+                "caption4 caption4 caption4 caption4";
+        }
+    }
+
+    footer {
+        .footer-container {
+            flex-direction: column;
+
+            .footer-links-container {
+                .icon-container {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    #works {
+        .my-work-container {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 200px;
+        }
+    }
+
+    // contact me page
+
+    #contact-me {
+        text-align: center;
+
+        h3 {
+            font-weight: 100;
+            text-transform: uppercase;
+        }
+
+        form {
+            margin-top: 2rem;
+        }
+
+        .inputs-container {
+            grid-template-rows: 40px 40px 40px 40px 120px;
+
+            input {
+                grid-column: 1 / span 2;
+            }
+        }
+    }
+
+    .contact-info-container {
+        flex-direction: column;
+
+        .contact-info-content {
+            margin: 1rem 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    #home {
+        .showcase-container {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #works {
+        .my-work-container {
+            grid-template-columns: 1fr;
+            grid-auto-rows: 300px;
+        }
+    }
+}

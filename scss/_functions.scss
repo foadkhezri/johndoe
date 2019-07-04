@@ -1,0 +1,29 @@
+@import 'variables';
+
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return $dark-color;
+    }
+
+    @else {
+        @return $light-color;
+    }
+}
+
+@function set-hover-color($color) {
+    @if(lightness($color) > 50) {
+        @return $primary-color;
+    }
+
+    @else {
+        @return lighten($color, 10%);
+    }
+}
+
+// mixin section
+
+@mixin transform($property) {
+    --webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
